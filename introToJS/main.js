@@ -1,5 +1,3 @@
-let gainedDollar = 3;
-gainedDollar++
-let lostDollar = 50;
-lostDollar--
-
+let myName = 'Leopoldo';
+let myCity = 'Paris';
+console.log(`My name is ${myName}. My favorite city is ${myCity}.`)
