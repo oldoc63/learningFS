@@ -1,10 +1,10 @@
 let spaceship = {
 	'Fuel Type': 'Turbo Fuel',
-	'Active Mission': true,
 	homePlanet:'Earth',
-	numCrew: 5,
+	color: 'silver',
+	'Secret Mission': 'Discover life outside the Earth.'
 };
 
-let propName = 'Active Mission';
-let isActive = spaceship[propName];
-console.log(isActive);
+spaceship.color = 'glorious gold';
+spaceship.numEngines = 5;
+delete spaceship['Secret Mission'];
