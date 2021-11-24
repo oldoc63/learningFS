@@ -1,10 +1,10 @@
 let spaceship = {
-	homePlanet: 'Earth',
-	color: 'silver',
 	'Fuel Type': 'Turbo Fuel',
+	'Active Mission': true,
+	homePlanet:'Earth',
 	numCrew: 5,
-	flighPath: ['Venus','Mars','Saturn']
 };
 
-let crewCount = spaceship.numCrew;
-let planetArray = spaceship.flightPath;
+let propName = 'Active Mission';
+let isActive = spaceship[propName];
+console.log(isActive);
