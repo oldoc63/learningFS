@@ -1,8 +1,10 @@
 const robot = {
-	energyLevel: 100,
-	checkEnergy () {
-		console.log(`Energy is currently at ${this.energyLevel}%.`)
+	_energyLevel: 100,
+	recharge () {
+		this._energyLevel += 30;
+		console.log(`Recharged! Energy is currently at ${this._energyLevel}%.`)
 	}
-}
+};
 
-robot.checkEnergy();
+
+robot.recharge();
