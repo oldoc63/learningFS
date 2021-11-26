@@ -1,11 +1,14 @@
-const robot = {
-  _energyLevel: 100,
-  recharge(){
-    this._energyLevel += 30;
-    console.log(`Recharged! Energy is currently at ${this._energyLevel}%.`)
-  }
+const person = {
+	_firstName: 'John',
+	_lastName: 'Doe',
+	get fullname () {
+		if (this._firstName && this._lastName) {
+			return `${this._firstName} ${this._lastName}`;
+		} else {
+			return 'Missing a first name or a last name.';
+		}
+	}
 };
 
-robot._energyLevel = 'high';
-robot.recharge();
-
+// To call the getter method:
+person.fullName;
