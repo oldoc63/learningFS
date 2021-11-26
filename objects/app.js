@@ -1,14 +1,14 @@
-const person = {
-	_firstName: 'John',
-	_lastName: 'Doe',
-	get fullname () {
-		if (this._firstName && this._lastName) {
-			return `${this._firstName} ${this._lastName}`;
-		} else {
-			return 'Missing a first name or a last name.';
-		}
-	}
+const robot = {
+  _model: '1E78V2',
+  _energyLevel: 100,
+  get energyLevel () {
+    if (typeof this._energyLevel === 'number') {
+      return `My current energy level is ${this._energyLevel}`;
+    } else {
+      return 'System malfunction: cannot retrieve energy level'
+    }
+  }
 };
 
-// To call the getter method:
-person.fullName;
+console.log(robot.energyLevel);
+
