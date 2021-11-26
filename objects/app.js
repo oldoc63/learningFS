@@ -1,14 +1,16 @@
-const robot = {
-  _model: '1E78V2',
-  _energyLevel: 100,
-  get energyLevel () {
-    if (typeof this._energyLevel === 'number') {
-      return `My current energy level is ${this._energyLevel}`;
-    } else {
-      return 'System malfunction: cannot retrieve energy level'
-    }
-  }
+const person = {
+	_age: 37,
+	set age (newAge) {
+		if (typeof newAge === 'number') {
+			this._age = newAge;
+		} else {
+			console.log('you must assign a number to age');
+		}
+	}
 };
 
-console.log(robot.energyLevel);
-
+person.age = 40;
+console.log(person._age); // Logs: 40
+person.age = '40'; // Logs: You must assign a number to age
+person._age = 'forty-five'
+console.log(person._age); // Prints forty-five
