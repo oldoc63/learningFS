@@ -1,16 +1,16 @@
-const vampire = {
-	name: 'Dracula',
-	residence: 'Transilvania',
-	preferences: {
-		day: 'stay inside',
-		night: 'satisfy appetite'
-	}
+const robot = {
+  model: '1E78V2',
+  energyLevel: 100,
+  functionality: {
+    beep() {
+      console.log('Beep Boop');
+    },
+    fireLaser() {
+      console.log('Pew Pew');
+    },
+  }
 };
 
-//const residence = vampire.residence;
+const {functionality} = robot;
+functionality.beep();
 
-const {residence} = vampire;
-console.log(residence);
-
-const {day} = vampire.preferences;
-console.log(day);
