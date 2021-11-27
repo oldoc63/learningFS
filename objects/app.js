@@ -11,3 +11,6 @@ const vampire = {
 
 const {residence} = vampire;
 console.log(residence);
+
+const {day} = vampire.preferences;
+console.log(day);
