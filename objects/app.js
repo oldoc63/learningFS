@@ -7,5 +7,7 @@ const vampire = {
 	}
 };
 
-const residence = vampire.residence;
+//const residence = vampire.residence;
+
+const {residence} = vampire;
 console.log(residence);
