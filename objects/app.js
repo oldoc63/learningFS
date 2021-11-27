@@ -1,13 +1,14 @@
-const robotFactory = (model, mobile) => {
+function robotFactory(model, mobile){
   return {
-    model: model,
-    mobile: mobile,
-    beep () {
+    model,
+    mobile,
+    beep() {
       console.log('Beep Boop');
     }
   }
-};
+}
 
-const tinCan = robotFactory('P-500', true);
-
-tinCan.beep();
+// To check that the property value shorthand technique worked:
+const newRobot = robotFactory('P-501', false)
+console.log(newRobot.model)
+console.log(newRobot.mobile)
