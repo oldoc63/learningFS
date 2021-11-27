@@ -1,14 +1,11 @@
-function robotFactory(model, mobile){
-  return {
-    model,
-    mobile,
-    beep() {
-      console.log('Beep Boop');
-    }
-  }
-}
+const vampire = {
+	name: 'Dracula',
+	residence: 'Transilvania',
+	preferences: {
+		day: 'stay inside',
+		night: 'satisfy appetite'
+	}
+};
 
-// To check that the property value shorthand technique worked:
-const newRobot = robotFactory('P-501', false)
-console.log(newRobot.model)
-console.log(newRobot.mobile)
+const residence = vampire.residence;
+console.log(residence);
