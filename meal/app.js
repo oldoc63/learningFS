@@ -13,14 +13,14 @@ const menu = {
   get desserts () {
     return this.courses.desserts;
   },
-  set appetizers (entradas) {
-    return this._courses.appetizers = entradas;
+  set appetizers (appetizers) {
+    return this._courses.appetizers = appetizers;
   },
-  set mains (principal) {
-    return this._courses.mains = principal;
+  set mains (mains) {
+    return this._courses.mains = mains;
   },
-  set desserts (postres) {
-    return this._courses.desserts = postres;
+  set desserts (desserts) {
+    return this._courses.desserts = desserts;
   },
   get courses() {
     return {
@@ -31,7 +31,7 @@ const menu = {
   },
   addDishToCourse (courseName, dishName, dishPrice) {
     const dish = {
-      dish: dishName,
+      name: dishName,
       price: dishPrice
     };
     return this._courses[courseName].push(dish);
@@ -50,6 +50,20 @@ const menu = {
  }
 };
 
+menu.addDishToCourse('appetizers', 'salad', 4.00);
+menu.addDishToCourse('appetizers', 'fries', 4.50);
+menu.addDishToCourse('appetizers', 'wings', 5.00);
+
+menu.addDishToCourse('mains', 'steak', 10.00);
+menu.addDishToCourse('mains', 'salmon', 15.00);
+menu.addDishToCourse('mains', 'tofu', 17.00);
+
+menu.addDishToCourse('desserts', 'ice cream', 3.00);
+menu.addDishToCourse('desserts', 'coffee', 3.00);
+menu.addDishToCourse('desserts', 'cake', 4.00);
+
+const meal = menu.generateRandomMeal();
+console.log(meal);
 
 
 
