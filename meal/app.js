@@ -28,8 +28,18 @@ const menu = {
       mains: this.mains,
       desserts: this.desserts
     }
+  },
+  addDishToCourse (courseName, dishName, dishPrice) {
+    const dish = {
+      dish: dishName,
+      price: dishPrice
+    };
+    return this._courses[courseName].push(dish);
   }
 }
+
+
+
 
 
 
