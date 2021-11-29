@@ -36,13 +36,19 @@ const menu = {
     };
     return this._courses[courseName].push(dish);
   },
- getRandomDishFromCourse (courseName) {
+  getRandomDishFromCourse (courseName) {
    const dishes = this._courses[courseName];
    const randomIndex = Math.floor(Math.random() * dishes.length);
-   return dishes[randomIndex];
-   
- } 
-}
+   return dishes[randomIndex]; 
+ },
+  generateRandomMeal () {
+   const appetizer = this.getRandomDishFromCourse('appetizers');
+   const main = this.getRandomDishFromCourse('mains');
+   const dessert = this.getRandomDishFromCourse('desserts');
+   const totalPrice = appetizer.price + main.price + dessert.price;
+   return `Your meal is ${appetizer.name}, ${main.name}, ${dessert.name}. The price is ${totalPrice}.`;
+ }
+};
 
 
 
