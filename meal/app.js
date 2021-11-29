@@ -22,6 +22,13 @@ const menu = {
   set desserts (postres) {
     return this._courses.desserts = postres;
   },
+  get courses() {
+    return {
+      appetizers: this.appetizers,
+      mains: this.mains,
+      desserts: this.desserts
+    }
+  }
 }
 
 
