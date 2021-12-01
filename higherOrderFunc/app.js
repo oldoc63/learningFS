@@ -8,3 +8,10 @@ const timeFuncRuntime = funcParameter => {
 const addOneToOne = () => 1 + 1;
 
 console.log(timeFuncRuntime(addOneToOne));
+
+console.log(timeFuncRuntime(() => {
+  for (let i = 10; i>0; i--){
+    console.log(i);
+  }
+}));
+
