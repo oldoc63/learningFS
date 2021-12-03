@@ -1,13 +1,10 @@
-const animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
+const words = ['chair', 'music', 'pillow', 'brick', 'pen', 'door']; 
+ 
+const shortWords = words.filter(word => {
+  return word.length < 6;
+});
 
-// Create the secretMessage array below
-const secretMessage = animals.map(firstCharacter => {return firstCharacter[0];})
+console.log(words);
+console.log(shortWords);
 
-console.log(secretMessage.join(''));
-
-const bigNumbers = [100, 200, 300, 400, 500];
-
-// Create the smallNumbers array below
-const smallNumbers = bigNumbers.map(smallNum => smallNum/100)
-
-console.log(smallNumbers);
+//Observe how words was not mutated, i.e. changed, and shortWords is a new array. 
