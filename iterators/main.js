@@ -1,10 +1,11 @@
-const words = ['chair', 'music', 'pillow', 'brick', 'pen', 'door']; 
- 
-const shortWords = words.filter(word => {
-  return word.length < 6;
-});
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
 
-console.log(words);
-console.log(shortWords);
+// Call .filter() on randomNumbers below
+const smallNumbers = randomNumbers.filter(num => {if (num < 256){return true}});
 
-//Observe how words was not mutated, i.e. changed, and shortWords is a new array. 
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+
+
+// Call .filter() on favoriteWords below
+const longFavoriteWords = favoriteWords.filter(word => {return word.length > 7;})
+
