@@ -1,9 +1,18 @@
-const newNumbers = [1, 3, 5, 7];
+const words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
 
-const newSum = newNumbers.reduce((accumulator, currentValue) => {
-  console.log('The value of accumulator: ', accumulator);
-  console.log('The value of currentValue: ', currentValue);
-  return accumulator + currentValue;
-}, 10);
+// Something is missing in the method call below
 
-console.log(newSum); // with second argument
+console.log(words.some((word) => {
+  return word.length < 6;
+}));
+
+// Use filter to create a new array
+
+const interestingWords = words.filter((word) => 
+word.length > 5);
+
+// Make sure to uncomment the code below and fix the incorrect code before running it
+
+console.log(interestingWords.every((word) => word.length > 5));
+
+//Iterator Documentation: MDN's Array iteration methods page
