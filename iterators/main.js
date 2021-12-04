@@ -1,18 +1,23 @@
-const words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
+const cities = ['Orlando', 'Dubai', 'Edinburgh', 'Chennai', 'Accra', 'Denver', 'Eskisehir', 'Medellin', 'Yokohama'];
 
-// Something is missing in the method call below
+const nums = [1, 50, 75, 200, 350, 525, 1000];
 
-console.log(words.some((word) => {
-  return word.length < 6;
-}));
+//  Choose a method that will return undefined
+cities.forEach(city => console.log('Have you visited ' + city + '?'));
 
-// Use filter to create a new array
+// Choose a method that will return a new array
+const longCities = cities.filter(city => city.length > 7);
 
-const interestingWords = words.filter((word) => 
-word.length > 5);
+// Choose a method that will return a single value
+const word = cities.reduce((acc, currVal) => {
+  return acc + currVal[0]
+}, "C");
 
-// Make sure to uncomment the code below and fix the incorrect code before running it
+console.log(word)
 
-console.log(interestingWords.every((word) => word.length > 5));
+// Choose a method that will return a new array
+const smallerNums = nums.map(num => num - 5);
 
-//Iterator Documentation: MDN's Array iteration methods page
+// Choose a method that will return a boolean value
+nums.every(num => num < 0);
+
