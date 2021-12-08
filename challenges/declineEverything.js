@@ -11,3 +11,15 @@ const declineEverything = array => {
 const veggies = ['broccoli', 'spinach', 'cauliflower', 'broccoflower'];
 
 declineEverything(veggies);
+
+// Write a function acceptEverything() that takes in an array of strings and loops through each element in the array and grudgingly accepts each of them, by logging to the console in the following format: 'Ok, I guess I will eat some [element].'
+
+const politelyAccept = veg => {
+console.log(`Ok, I guess I will eat some ${veg}.`);
+}
+
+const acceptEverything = array => {
+	array.forEach(politelyAccept)
+}
+
+acceptEverything(veggies);
