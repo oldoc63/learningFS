@@ -5,7 +5,7 @@ const politelyDecline = veg => {
 }
 
 const declineEverything = array => {
-	array.forEach(veggie => politelyDecline(veggie))
+	array.forEach(politelyDecline)
 }
 
 const veggies = ['broccoli', 'spinach', 'cauliflower', 'broccoflower'];
