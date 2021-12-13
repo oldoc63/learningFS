@@ -20,9 +20,12 @@ inRange(number, start, end){
 	    return isInRange
 	},
 
+words(string){
+	words = string.split(' ')
+	return words
+  },
 
 };
-
 
 
 
