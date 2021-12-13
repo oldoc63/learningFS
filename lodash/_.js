@@ -25,8 +25,17 @@ words(string){
 	return words
   },
 
-};
+pad(string, length){
+	if(length <= string.length){
+		return string;
+	}
+	let startPaddingLength = Math.floor((length - string.length) / 2);
+	let endPaddingLength = length - string.length - startPaddingLength;
+	let paddedString = ' '.repeat(startPaddingLength) + string + ' '.repeat(endPaddingLength);
+	return paddedString;
+ }
 
+};
 
 
 // Do not write or modify code below this line.
