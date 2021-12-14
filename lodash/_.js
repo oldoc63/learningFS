@@ -33,7 +33,14 @@ pad(string, length){
 	let endPaddingLength = length - string.length - startPaddingLength;
 	let paddedString = ' '.repeat(startPaddingLength) + string + ' '.repeat(endPaddingLength);
 	return paddedString;
- }
+ },
+	
+has(object, key){
+	hasValue = object[key];
+	if(hasValue === undefined){
+		return false;
+	}return true;
+ },
 
 };
 
