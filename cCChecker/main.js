@@ -49,11 +49,14 @@ const validateCred = array => {
 	for(let l of sumArray){
 		finalSum += l;
 	}
-	console.log(finalSum);
-
+	if(finalSum % 10 === 0){
+		return 'Valid Credit Card';
+	} else {
+		return ('Invalid Credit Card');
+	}
 }
 
-validateCred(mystery5);
+console.log(validateCred(mystery5));
 
 
 
