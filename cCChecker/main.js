@@ -43,6 +43,9 @@ const validateCred = array => {
 	let lessThanNine = everyOtherDigit.filter(function(x){
 		return x < 9;
 	})
+	let newSubDigits = subDigits.concat(lessThanNine);
+	let sumArray = checkDigits.concat(newSubDigits);
+
 }
 
 validateCred(mystery5);
