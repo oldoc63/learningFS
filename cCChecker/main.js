@@ -27,10 +27,15 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 const validateCred = array => {
 	let checkDigits = [];
+	let everyOtherDigit = [];
 	for(i = array.length -1; i >=0; i -= 2){
 		checkDigits.push(array[i]);
 	}
-	console.log(checkDigits);
+	for(j = array.length -1; j >=0; j -= 2){
+		everyOtherDigit.push(array[j] * 2);
+	}
+	console.log(everyOtherDigit);
+
 }
 
 validateCred(mystery5);
