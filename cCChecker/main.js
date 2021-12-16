@@ -40,6 +40,9 @@ const validateCred = array => {
 			subDigits.push(k - 9);
 		}
 	}
+	let lessThanNine = everyOtherDigit.filter(function(x){
+		return x < 9;
+	})
 }
 
 validateCred(mystery5);
