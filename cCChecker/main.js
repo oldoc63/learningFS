@@ -45,6 +45,11 @@ const validateCred = array => {
 	})
 	let newSubDigits = subDigits.concat(lessThanNine);
 	let sumArray = checkDigits.concat(newSubDigits);
+	let finalSum = 0;
+	for(let l of sumArray){
+		finalSum += l;
+	}
+	console.log(finalSum);
 
 }
 
