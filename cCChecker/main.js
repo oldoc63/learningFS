@@ -24,43 +24,23 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 
 // Add your functions below:
+function validateCred(numArr) {
+  let total = 0;
+  for (let i = numArr.length - 1; i >= 0; i--) {
+    let currValue = numArr[i]
+    if ((numArr.length - 1 - i) % 2 === 1) {
+      currValue *= 2;
+      if (currValue > 9) {
+        currValue -= 9;
+      }
+    }
+    total += currValue;
+  }
 
-const validateCred = array => {
-	let checkDigits = [];
-	let everyOtherDigit = [];
-	let subDigits = [];
-	for(let i = array.length -1; i >=0; i -= 2){
-		checkDigits.push(array[i]);
-	}
-	for(let j = array.length -1; j >=0; j -= 2){
-		everyOtherDigit.push(array[j] * 2);
-	}
-	for(let k of everyOtherDigit){
-		if(k > 9){
-			subDigits.push(k - 9);
-		}
-	}
-	let lessThanNine = everyOtherDigit.filter(function(x){
-		return x < 9;
-	})
-	let newSubDigits = subDigits.concat(lessThanNine);
-	let sumArray = checkDigits.concat(newSubDigits);
-	let finalSum = 0;
-	for(let l of sumArray){
-		finalSum += l;
-	}
-	if(finalSum % 10 === 0){
-		return 'Valid Credit Card';
-	} else {
-		return ('Invalid Credit Card');
-	}
+  return total % 10 === 0;
+
 }
 
-console.log(validateCred(mystery5));
-
-
-
-
-
-
-
+// Test functions:
+console.log(validateCred(valid1)); // Should print true
+console.log(validateCred(invalid1)); // Should print false
