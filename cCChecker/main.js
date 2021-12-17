@@ -44,3 +44,21 @@ function validateCred(numArr) {
 // Test functions:
 console.log(validateCred(valid1)); // Should print true
 console.log(validateCred(invalid1)); // Should print false
+
+function findInvalidCards(cards){
+	const invalid = [];
+	for(let i = 0; i < cards.length; i++){
+		let currCred = cards[i];
+		if(!validateCred(currCred)){
+			invalid.push(currCred);
+		}
+	}
+	return invalid;
+}
+
+// Test function
+console.log(findInvalidCards([valid1, valid2, valid3, valid4, valid5]));// Shouldn't print anything
+console.log(findInvalidCards([invalid1, invalid2, invalid3, invalid4, invalid5])); // Should print all of the numbers
+
+console.log(findInvalidCards(batch)); // Test what the mystery numbers are
+
