@@ -45,15 +45,17 @@ function validateCred(numArr) {
 console.log(validateCred(valid1)); // Should print true
 console.log(validateCred(invalid1)); // Should print false
 
-function findInvalidCards(cards){
-	const invalid = [];
-	for(let i = 0; i < cards.length; i++){
-		let currCred = cards[i];
-		if(!validateCred(currCred)){
-			invalid.push(currCred);
-		}
-	}
-	return invalid;
+function findInvalidCards(cards) {
+  const invalid = [];
+
+  for (let i = 0; i < cards.length; i++) {
+    let currCred = cards[i];
+    if (!validateCred(currCred)) {
+      invalid.push(currCred);
+    }
+  }
+
+  return invalid;
 }
 
 // Test function
@@ -62,3 +64,37 @@ console.log(findInvalidCards([invalid1, invalid2, invalid3, invalid4, invalid5])
 
 console.log(findInvalidCards(batch)); // Test what the mystery numbers are
 
+function idInvalidCardCompanies(invalidBatch) {
+  const companies = [];
+  for (let i = 0; i < invalidBatch.length; i++) {
+    switch (invalidBatch[i][0]) {
+      case 3:
+        if (companies.indexOf('Amex') === -1) {
+          companies.push('Amex');
+        }
+        break
+      case 4:
+        if (companies.indexOf('Visa') === -1) {
+          companies.push('Visa');
+        }
+        break
+      case 5:
+        if (companies.indexOf('Mastercard') === -1) {
+          companies.push('Mastercard');
+        }
+        break
+      case 6:
+        if (companies.indexOf('Discover') === -1) {
+          companies.push('Discover');
+        }
+        break
+      default:
+        console.log('Company not found');
+    }
+  }
+  return companies;
+}
+
+console.log(idInvalidCardCompanies([invalid1])); // Should print['visa']
+console.log(idInvalidCardCompanies([invalid2])); // Should print ['mastercard']
+console.log(idInvalidCardCompanies(batch)); // Find out which companies have mailed out invalid cards
