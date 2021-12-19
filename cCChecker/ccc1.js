@@ -39,6 +39,11 @@ const validateCred = cardNumber => {
 			doubledList.push(revList[j] * 2);
 		}
 	}
+	for(let k=1;k<revList.length;k+=2){
+		doubledList.push(revList[k]);
+	}
+	console.log(doubledList);
+
 
 }
 
