@@ -32,7 +32,14 @@ const validateCred = cardNumber => {
 	for(let i=newList.length-1;i>=0;i--){
 		revList.push(newList[i]);
 	}
-	console.log(revList);
+	for(let j=0;j<revList.length;j+=2){
+		if(revList[j] * 2 > 9){
+			doubledList.push((revList[j] * 2) - 9);
+		}else{
+			doubledList.push(revList[j] * 2);
+		}
+	}
+
 }
 
 validateCred(mystery5);
