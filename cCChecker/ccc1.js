@@ -42,9 +42,22 @@ const validateCred = cardNumber => {
 	for(let k=1;k<revList.length;k+=2){
 		doubledList.push(revList[k]);
 	}
-	console.log(doubledList);
+	let totalSum = 0;
+	for(let l=0;l<doubledList.length;l++){
+		totalSum += doubledList[l];
+	}
+	totalSum += cardNumber[cardNumber.length -1];
 
+    console.log(newList);
+    console.log(revList);
+    console.log(doubledList);
+    console.log(totalSum);
 
+	if(totalSum % 10 === 0){
+		return true;
+	}else{
+		return false;
+	}
 }
 
-validateCred(mystery5);
+console.log(validateCred(valid1));
