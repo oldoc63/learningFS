@@ -30,9 +30,27 @@ const pAquourFactory = (num, arr) => {
 			this.dna.splice(randomIndex, 1, randomBase);                                 // replacing the base with a random one
 			console.log(`New dna strand: ${this.dna}`)
 		},
+		compareDNA(pAequorObj) {                                        // method to compare current organism with the previous one
+      let counter = 0;
+      for (let i = 0; i < this.dna.length; i++) {
+        if (i == 0) {                                               // show the bases of the two organisms just one time each
+          console.log(`\nComparing DNA strands\nSpecimen${this.specimenNum} bases: ${this.dna}`);
+          console.log(`Specimen${pAequorObj.specimenNum} bases: ${pAequorObj.dna}`);
+        }
+        if (this.dna[i] === pAequorObj.dna[i]) {                                      // if the two bases are equal
+            console.log(this.dna[i] + " and  " + pAequorObj.dna[i] + " are equal");   // print message
+            counter += 1;                                                             // increase counter
+            console.log("Matching bases so far: " + counter);                         // log the counter
+        }
+      }
+      let basesInCommon = Math.floor((100 / 15) * counter);                           // calculating the % of common bases
+			return console.log(`Specimen ${this.specimenNum} and Specimen ${pAequorObj.specimenNum} are ${basesInCommon}% compatible`);
+		},
 	}
 };
 
 sample1 = pAquourFactory(1, mockUpStrand());
-sample1.mutate()
+sample2 = pAquourFactory(2, mockUpStrand());
+mutated = sample1.mutate();
+compare = sample1.compareDNA(sample2);
 
