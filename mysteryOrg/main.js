@@ -13,3 +13,11 @@ const mockUpStrand = () => {
   return newStrand;
 };
 
+const pAquourFactory = (num, arr) => {
+	return {
+		specimenNum: num,
+		dna: arr
+	}
+};
+
+console.log(pAquourFactory(1, mockUpStrand()));
