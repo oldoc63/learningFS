@@ -46,6 +46,17 @@ const pAquourFactory = (num, arr) => {
       let basesInCommon = Math.floor((100 / 15) * counter);                           // calculating the % of common bases
 			return console.log(`Specimen ${this.specimenNum} and Specimen ${pAequorObj.specimenNum} are ${basesInCommon}% compatible`);
 		},
+		willLikelySurvive() {                                       // returns true if at least 60% of its bases are C or G
+      let counter = 0;           // counter value
+        for ( let i = 0; i < this.dna.length; i++ ) {           // looping over bases of caller object
+          if ( this.dna[i] == "C" || this.dna[i] == "G" ) {     // if the base if C or G...
+            counter += 1;                                       // ...increase counter
+          }  
+        }
+      return (counter >= 9);                             // returns true if at least 9 bases (60%) are "C" or "G"
+    },
+
+
 	}
 };
 
@@ -53,4 +64,5 @@ sample1 = pAquourFactory(1, mockUpStrand());
 sample2 = pAquourFactory(2, mockUpStrand());
 mutated = sample1.mutate();
 compare = sample1.compareDNA(sample2);
+console.log(sample1.willLikelySurvive());
 
