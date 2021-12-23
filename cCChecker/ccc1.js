@@ -48,10 +48,10 @@ const validateCred = cardNumber => {
 	}
 	totalSum += cardNumber[cardNumber.length -1];
 
-    console.log(newList);
+   /* console.log(newList);
     console.log(revList);
     console.log(doubledList);
-    console.log(totalSum);
+    console.log(totalSum);*/
 
 	if(totalSum % 10 === 0){
 		return true;
@@ -61,3 +61,45 @@ const validateCred = cardNumber => {
 }
 
 console.log(validateCred(valid1));
+var valCards = [];
+var invalCards = [];
+const findInvalidCards = cardArray => {
+  for (let i = 0; i < cardArray.length; i++) {
+    if (validateCred(cardArray[i]) === true) {
+      valCards.unshift(cardArray[i]);
+    }
+    else {
+      invalCards.unshift(cardArray[i]);
+    } 
+  }
+  return valCards;
+}
+
+findInvalidCards(batch);
+
+const idInvalidCardCompanies = badCards => {
+  var badCardCompanies = [];
+  var noDoubles = [];
+  //noDoubles = badCardCompany.length;
+  for (let i = 0; i < badCards.length; i++) {
+    if (badCards[i][0] === 3) {
+      badCardCompanies.unshift('American Express');
+    }
+    else if (badCards[i][0] === 4) {
+      badCardCompanies.unshift('Visa');
+    }
+    else if (badCards[i][0] === 5) {
+      badCardCompanies.unshift('MasterCard');
+    }
+    else if (badCards[i][0] === 6) {
+      badCardCompanies.unshift('Discover');
+      }
+    else {
+      badCardCompanies.unshift('Company not found');
+    }
+  }
+uniqueList = [...new Set(badCardCompanies)];
+  console.log(uniqueList);
+}
+  
+idInvalidCardCompanies(invalCards);
