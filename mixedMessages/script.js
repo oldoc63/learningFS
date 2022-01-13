@@ -12,7 +12,22 @@ let personalWisdom = []
 
 //Iterate over the object
 for(let prop in collectiveWisdom){
-    let optionIdx = generateRandomNumber(collectiveWisdom[prop].length) 
-    personalWisdom.push(optionIdx)  
-}
-console.log(personalWisdom)
+    let optionIdx = generateRandomNumber(collectiveWisdom[prop].length)
+    //personalWisdom.push(optionIdx)
+//console.log(personalWisdom)
+//Use the object's collectiveWisdom properties to customize the message being added to personalWisdom
+    switch(prop){
+        case 'signInfo':
+            personalWisdom.push(`Your sign right now is a "${collectiveWisdom[prop][optionIdx]}".`)
+            break
+        case 'fortuneOutput':
+            personalWisdom.push(`You are having: "${collectiveWisdom[prop][optionIdx]}".`)
+            break
+        case 'advice':
+            personalWisdom.push(`You should: "${collectiveWisdom[prop][optionIdx]}".`)
+            break
+        default:
+            personalWisdom.push('There is not enough info.')
+        }
+    }
+    
