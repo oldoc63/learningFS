@@ -30,4 +30,9 @@ for(let prop in collectiveWisdom){
             personalWisdom.push('There is not enough info.')
         }
     }
-    
+function formatWisdom(wisdom){
+    const formatted = personalWisdom.join('\n')
+    console.log(formatted)
+}
+
+formatWisdom(personalWisdom);    
