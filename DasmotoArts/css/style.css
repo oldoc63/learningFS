@@ -8,3 +8,8 @@ h1 {
     font-size: 100px;
     color: khaki;
 }
+
+.item h2 {
+    font-size: 32px;
+    color: blue;
+}
