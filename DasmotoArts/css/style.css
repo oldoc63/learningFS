@@ -18,3 +18,15 @@ h1 {
     font-weight: bold;
     color: blue;
 }
+
+#brush {
+    background-color: mediumspringgreen;
+}
+
+#frame {
+    background-color: lightcoral;
+}
+
+#paint {
+    background-color: skyblue;
+}
