@@ -1,18 +1,14 @@
-h1 {
-    color: #b5179e;
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    /*border-spacing: 5px;*/
+    padding: 5px;
 }
-
-a:link, a:visited {
-    background-color: #b5179e;
-    color:antiquewhite;
-    padding: 15px 25px;
+/*
+td{
     text-align: center;
-    text-decoration: none;
 }
-
-a:hover, a:active {
-    background-color: #f72585;
+th{
+    text-align: left;
 }
-
-
-
+*/
