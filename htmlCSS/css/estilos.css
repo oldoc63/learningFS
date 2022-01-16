@@ -1,26 +1,18 @@
 h1 {
-    color:#f07167;
+    color: #b5179e;
 }
 
-a:link {
-    color:#fb8500;
+a:link, a:visited {
+    background-color: #b5179e;
+    color:antiquewhite;
+    padding: 15px 25px;
+    text-align: center;
     text-decoration: none;
 }
 
-a:visited {
-    color:#219ebc;
-    text-decoration: none;
+a:hover, a:active {
+    background-color: #f72585;
 }
 
-/*cuando nos ponemos encima del link*/
-a:hover {
-    color:#8ecae6;
-    text-decoration: underline;
-}
-
-a:active {
-    color:#023047;
-    text-decoration: underline;
-}
 
 
