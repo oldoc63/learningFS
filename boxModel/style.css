@@ -1,11 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   background-color: white;
   font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation ul {
@@ -27,6 +24,10 @@ body {
   letter-spacing: 4px;
 }
 
+.donate{
+  visibility: hidden;
+}
+
 #banner {
   background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
   background-size: cover;
@@ -44,12 +45,12 @@ body {
 }
 
 #main {
-  overflow: scroll;
   margin: 0 auto;
   padding: 40px;
   text-align: center;
   width: 400px;
   height: 1000px;
+  overflow: scroll;
 }
 
 h1 {
