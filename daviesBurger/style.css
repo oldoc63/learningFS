@@ -50,6 +50,9 @@ body {
     background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burgerphoto.jpeg");
     background-position: center;
     background-size: cover;
+    height: 320px;
+    padding: 20px;
+    margin: 0 auto;
   }
   
   .header h1 {
