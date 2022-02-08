@@ -8,6 +8,7 @@ header {
   border-bottom: 1px solid #466995;
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 ul {
