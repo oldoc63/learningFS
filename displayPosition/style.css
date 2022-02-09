@@ -94,6 +94,7 @@ footer {
   text-align: center;
   position: relative;
   top: 40px;
+  clear: left;
 }
 
 .answer {
