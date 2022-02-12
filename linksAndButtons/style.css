@@ -118,3 +118,19 @@ a {
 a:hover {
   text-decoration: none;
 }
+
+a:visited {
+  color: #466995;
+}
+
+.question-link:visited {
+  color: #ffffff
+}
+
+a:active {
+  color: #DBE9EE;
+}
+
+.question-link:active {
+  color: #DBE9EE
+}
