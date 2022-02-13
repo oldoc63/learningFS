@@ -129,8 +129,11 @@ a:visited {
   color: #ffffff
 }
 
-.answer:active {
+.answer:hover {
   background-color: #C0D6DF;
+}
+
+.answer:active {
   color: #FFFFFF;
 }
 
