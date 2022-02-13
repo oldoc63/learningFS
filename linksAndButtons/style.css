@@ -108,13 +108,12 @@
     font-weight: 700;
     text-transform: uppercase;
     border: 1px solid #466995;
-    border-radius: 10px;
-    box-shadow: 0px 4px;
+    
   }
   
 a {
-    color: #466995;
-    text-decoration: underline;
+    color: #61bff9;
+    text-decoration: none;
     cursor: pointer;
   }
 
@@ -131,11 +130,8 @@ a:visited {
 }
 
 .answer:active {
-  margin-top: 24px;
-  margin-bottom: 16px;
-  box-shadow: 0px 0px;
   background-color: #C0D6DF;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .question-link:active {
