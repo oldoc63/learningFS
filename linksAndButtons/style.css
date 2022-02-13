@@ -130,8 +130,12 @@ a:visited {
   color: #ffffff
 }
 
-a:active {
-  color: #DBE9EE;
+.answer:active {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  box-shadow: 0px 0px;
+  background-color: #C0D6DF;
+  color: #ffffff;
 }
 
 .question-link:active {
