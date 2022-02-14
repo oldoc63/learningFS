@@ -7,3 +7,19 @@ a {
 a:hover {
     text-decoration: none;
 }
+
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #5495ff;
+}
+
+.btn {
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
