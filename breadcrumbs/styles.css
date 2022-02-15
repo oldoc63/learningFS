@@ -5,7 +5,7 @@
 
 .breadcrumb li+li::before {
 	padding: 10px;
-
+	content: ">";
 }
 
 .breadcrumb a {
