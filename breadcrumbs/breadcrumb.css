@@ -1,0 +1,17 @@
+.breadcrumb {
+    text-align: left;
+  }
+  .breadcrumb li {
+    float: left;
+  }
+  .breadcrumb a {
+    color: #fff;
+    background: darkcyan;
+    text-decoration: none;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 15px;
+    padding: 0 5px;
+  }
