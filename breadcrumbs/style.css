@@ -79,8 +79,4 @@ li{
 }
 .breadcrumb a {
     background-color: inherit;
-    display: inline;
-}
-.breadcrumb {
-  text-align: left;
 }
