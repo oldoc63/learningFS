@@ -1,3 +1,11 @@
+.breadcrumb a::before,
+.breadcrumb a::after {
+  content: "";
+  position: absolute;
+  border-color: darkcyan;
+  border-style: solid;
+  border-width: 15px 5px;
+}
 .breadcrumb {
     text-align: left;
   }
