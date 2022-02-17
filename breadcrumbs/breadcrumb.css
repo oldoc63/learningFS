@@ -11,3 +11,6 @@
 .breadcrumb a {
   display: inline;
 }
+.attribute a {
+  color: gray;
+}
