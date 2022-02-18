@@ -14,3 +14,8 @@
 .attribute a {
   color: gray;
 }
+.attribute a::after {
+  content: " x";
+  font-size: 8px;
+  vertical-align: super;
+}
