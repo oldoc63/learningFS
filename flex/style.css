@@ -41,7 +41,8 @@ h1 {
 }
 
 #spacearound {
-
+  display: flex;
+  justify-content: space-around;
 }
 
 #spacebetween {
