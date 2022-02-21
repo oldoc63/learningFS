@@ -31,7 +31,8 @@ h1 {
 }
 
 #flexend {
-
+  display: flex;
+  justify-content: flex-end;
 }
 
 #center {
