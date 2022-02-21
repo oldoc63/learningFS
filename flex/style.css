@@ -26,7 +26,8 @@ h1 {
 }
 
 #flexstart {
-
+  display: flex;
+  justify-content: flex-start;
 }
 
 #flexend {
