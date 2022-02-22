@@ -31,7 +31,7 @@ h1 {
 }
 
 #flexstart {
-
+  align-items: flex-start;
 }
 
 #flexend {
