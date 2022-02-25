@@ -36,7 +36,7 @@ h2 {
 }
 
 .middle.side {
-
+  flex-shrink: 0;
 }
 
 .middle.center {
