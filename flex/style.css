@@ -28,11 +28,11 @@ h2 {
 }
 
 .top.side {
-  flex-grow: 1;
+
 }
 
 .top.center {
-  flex-grow: 1;
+
 }
 
 .middle.side {
@@ -40,22 +40,22 @@ h2 {
 }
 
 .middle.center {
-  flex-grow: 1;
+
 }
 
 .bottom.side {
-  flex-grow: 1;
+
 }
 
 .bottom.center {
-	flex-grow: 2;
+	
 }
 
 #top,
 #middle,
 #bottom {
   display: flex;
-  background-color: Whitesmoke;
+  background-color: whitesmoke;
   justify-content: center;
   min-height: 200px;
   align-items: center;
