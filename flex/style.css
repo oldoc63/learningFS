@@ -40,15 +40,15 @@ h2 {
 }
 
 .middle.center {
-
+  flex-grow: 1;
 }
 
 .bottom.side {
-
+  flex-grow: 1;
 }
 
 .bottom.center {
-	
+	flex-grow: 2;
 }
 
 #top,
