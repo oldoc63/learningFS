@@ -28,7 +28,7 @@ h2 {
 }
 
 .top.side {
-
+  flex-shrink: 2;
 }
 
 .top.center {
