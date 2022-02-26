@@ -33,7 +33,7 @@ h2 {
 }
 
 .shrink.side {
-
+  flex-basis: 300px;
 }
 
 .shrink.center {
