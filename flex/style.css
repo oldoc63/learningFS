@@ -5,21 +5,17 @@ body {
 }
 
 h1 {
+  text-align: center;
   font-size: 18px;
 }
 
 h2 {
+  text-align: center;
   font-size: 16px;
 }
 
-h1,
-h2 {
-  text-align: center;
-}
-
-.top,
-.middle,
-.bottom {
+.grow,
+.shrink {
   width: 100px;
   height: 100px;
   background-color: dodgerblue;
@@ -27,33 +23,24 @@ h2 {
   margin: 10px 30px;
 }
 
-.top.side {
-  flex-shrink: 2;
-}
-
-.top.center {
+.grow.side {
 
 }
 
-.middle.side {
-  flex-shrink: 0;
-}
-
-.middle.center {
+.grow.center {
 
 }
 
-.bottom.side {
+.shrink.side {
 
 }
 
-.bottom.center {
-	flex-shrink: 2;
+.shrink.center {
+
 }
 
-#top,
-#middle,
-#bottom {
+#grows,
+#shrinks {
   display: flex;
   background-color: whitesmoke;
   justify-content: center;
