@@ -29,7 +29,7 @@ h2 {
 }
 
 .grow.center {
-
+  flex-grow: 3;
 }
 
 .shrink.side {
