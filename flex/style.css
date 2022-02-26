@@ -24,7 +24,8 @@ h2 {
 }
 
 .grow.side {
-
+  flex-basis: 60px;
+  flex-grow: 1;
 }
 
 .grow.center {
