@@ -38,7 +38,8 @@ h2 {
 }
 
 .shrink.center {
-
+  flex-shrink: 2;
+  flex-basis: 150px;
 }
 
 #grows,
