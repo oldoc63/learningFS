@@ -40,7 +40,7 @@ h1 {
 }
 
 #between {
-
+  align-content: space-between;
 }
 
 #around {
