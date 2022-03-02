@@ -20,7 +20,9 @@ h2 {
 .container {
   background-color: dodgerblue;
   display: flex;
-  height: 600px;
+  max-height: 600px;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .box {
@@ -28,20 +30,21 @@ h2 {
   border: 1px solid white;
   width: 100px;
   height: 100px;
+  flex-grow: 1;
 }
 
 #row {
-
+  flex-direction: row;
 }
 
 #row-reverse {
-
+  flex-direction: row-reverse;
 }
 
 #column {
-
+  flex-direction: column; 
 }
 
 #column-reverse {
-
+  flex-direction: column-reverse;
 }
