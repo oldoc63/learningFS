@@ -33,11 +33,11 @@ h1, h2 {
 }
 
 #row-reverse {
-    
+  flex-flow: row-reverse wrap;    
 }
 
 #column {
-
+  flex-flow: column wrap;
 }
 
 #column-reverse {
