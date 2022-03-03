@@ -88,6 +88,7 @@ h1 {
 .cards {
   background-color: #ffc200;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .col {
