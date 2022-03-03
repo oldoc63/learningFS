@@ -94,6 +94,7 @@ h1 {
 
 .col {
   display: inline-flex;
+  flex-direction: column;
 }
 
 #expertise {
