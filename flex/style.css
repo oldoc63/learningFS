@@ -11,6 +11,7 @@ h2 {
   background-color: lightgrey;
   width: 400px;
   height: 700px;
+  display: flex;
 }
 
 .container {
