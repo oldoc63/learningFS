@@ -14,3 +14,14 @@ body {
    margin-left: 10px;
    float: left;
 }
+nav {
+    font-size: 1rem;
+    background-color: black;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
