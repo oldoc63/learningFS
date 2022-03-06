@@ -25,3 +25,14 @@ nav ul {
     display: flex;
     justify-content: space-around;
 }
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+}
