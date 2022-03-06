@@ -8,3 +8,9 @@ body {
     opacity: 0.9;
     color: seashell;
 }
+#menus img {
+   height: 50px;
+   margin-top: 10px;
+   margin-left: 10px;
+   float: left;
+}
