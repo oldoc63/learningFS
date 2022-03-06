@@ -39,3 +39,17 @@ nav ul {
 .item {
     padding: 10px;
 }
+/* Middle; Banner*/
+
+#mission {
+    background-image: url("./img/img-mission-background.jpg");
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    width: 100%;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    border-top: solid seashell;
+}
