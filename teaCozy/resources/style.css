@@ -53,3 +53,11 @@ nav ul {
     align-items: center;
     border-top: solid seashell;
 }
+.missiontext{
+    color: seashell;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    justify-content:center;
+}
