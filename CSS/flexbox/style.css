@@ -11,14 +11,41 @@ h1 {
 }
 
 .container {
-    width: 150px;
-    border: 1px solid grey;
-    display: inline-flex;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    background-color: whitesmoke;
 }
 
 .box {
     background-color: dodgerblue;
     height: 75px;
-    width: 75px;
-    border: 1px solid turquoise;
+    width: 100px;
+    border: 1px solid lightgrey;
+    display: inline-block;
+}
+
+#flexstart {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#flexend {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#center {
+    display: flex;
+    justify-content: center;
+}
+
+#spacearound {
+    display: flex;
+    justify-content: space-around;
+}
+
+#spacebetween {
+    display: flex;
+    justify-content: space-between;
 }
