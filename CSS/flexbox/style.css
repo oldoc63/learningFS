@@ -1,30 +1,5 @@
-body {
-    margin: 0;
-    border: 0;
-    font-family: 'Roboto Mono', monospace;
-}
-
-h1 {
-    font-size: 18;
-    text-align: center;
-}
-
-h2 {
-    font-size: 16px;
-    text-align: center;
-}
-
 .container {
-    background-color: whitesmoke;
-}
-
-.box {
-    background-color: dodgerblue;
-    height: 100px;
-    width: 100px;
-    border: 1px solid lightgrey;
-}
-
-#flex {
-    display: flex;
+    width: 200px;
+    height: 200px;
+    display: inline-flex;
 }
