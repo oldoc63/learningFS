@@ -6,6 +6,7 @@
   gap: 10px;
   grid-template-areas: "header header" "nav nav" "left right" "footer footer";
   grid-template-columns: 200px 400px;
+  grid-template-rows: 150px 200px 600px 200px;
 }
 
 h1, h2 {
@@ -33,7 +34,7 @@ nav {
   grid-area: right;
 }
 
-.footer {
+footer {
   background-color: dodgerblue;
   grid-area: footer;
 }
