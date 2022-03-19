@@ -12,6 +12,7 @@ body {
 header{
     grid-column-start: 1;
     grid-column-end: 6;
+    display: grid;
 }
 .title{
     margin: auto;
@@ -43,6 +44,7 @@ img {
     background-color: #f0f0f0;
     grid-column-start: 1;
     grid-column-end: 6;
+    display: grid;
 }
 .text {
     color: #2f2d2d;
@@ -59,6 +61,7 @@ img {
     font-weight: 500;
     letter-spacing: 0.5px;
     text-align: center;
+    display: grid;
 }
 .address {
     grid-column: 1 / span 2;
@@ -95,4 +98,5 @@ footer {
     letter-spacing: 0.4px;
     grid-column-start: 1;
     grid-column-end: 6;
+    display: grid;
 }
