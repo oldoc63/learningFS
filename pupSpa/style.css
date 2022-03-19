@@ -11,7 +11,7 @@ body {
 }
 header{
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 7;
     display: grid;
 }
 .title{
@@ -30,7 +30,7 @@ header{
     font-weight: 300;
     letter-spacing: 3.7px;
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 7;
 }
 p, .banner-contents {
     max-width: 80%;
@@ -43,7 +43,7 @@ img {
 .about {
     background-color: #f0f0f0;
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 7;
     display: grid;
 }
 .text {
@@ -97,6 +97,6 @@ footer {
     font-size: 16;
     letter-spacing: 0.4px;
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 7;
     display: grid;
 }
