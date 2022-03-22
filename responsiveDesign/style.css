@@ -2,25 +2,25 @@
 
 html {
     font-size: 16px;
-}
-
-body {
+  }
+  
+  body {
     background-color: white;
-}
-
-.image-container {
+  }
+  
+  .image-container {
     overflow: hidden;
-}
-
-.image-container img {
+  }
+  
+  .image-container img {
     display: block;
     max-width: 100%;
     height: auto;
-}
-
-/* Banner Section */
-
-#banner {
+  }
+  
+  /* Banner Section */
+  
+  #banner {
     height: 46rem;
     background-image: url('camel-background.png');
     background-position: center;
@@ -30,26 +30,26 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-#banner h1 {
-    font-size: 1.5em;
+  }
+  
+  #banner h1 {
+    font-size: 3.75rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: white;
-}
-
-/* Blog Post */
-
-#blog {
+  }
+  
+  /* Blog Post */
+  
+  #blog {
     width: 86%;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#blog .post {
+  }
+  
+  #blog .post {
     width: 52%;
     margin-top: 12.5%;
     margin-bottom: 7.5%;
@@ -62,53 +62,52 @@ body {
     text-align: center;
     line-height: 1.8;
     color: #444444;
-}
-
-.post h2 {
+  }
+  
+  .post h2 {
     font-size: 1.875rem;
     margin-bottom: 1.5rem;
   }
-
-.post h3 {
+  
+  .post h3 {
     font-size: 1.125rem;
     color: #999999;
-}
-
-.post .opening-line {
+  }
+  
+  .post .opening-line {
     margin-top: 4.1875rem;
     margin-bottom: 1.5rem;
     color: black;
     font-weight: bold;
-}
-
-.post p,
-.post .image-container {
+  }
+  
+  .post p,
+  .post .image-container {
     margin-bottom: 2rem;
-}
-
-.post .image-container {
+  }
+  
+  .post .image-container {
     width: 100%;
-}
-
-/* Blog Images */
-
-.images {
+  }
+  
+  /* Blog Images */
+  
+  .images {
     margin-bottom: 20%;
-}
-
-.images .image-container {
+  }
+  
+  .images .image-container {
     display: inline-block;
     width: 50%;
-}
-
-/* Footer */
-
-footer {
+  }
+  
+  /* Footer */
+  
+  footer {
     padding: 4rem 0;
     border-top: 1px solid #999999;
     font-family: 'Roboto', sans-serif;
     font-size: 1.125rem;
     color: #999999;
     text-align: center;
-}
-
+  }
