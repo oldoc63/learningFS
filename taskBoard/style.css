@@ -183,8 +183,4 @@ input {
     color: #2f2f2f;
 }
 
-.completed-projects {
-	grid-template-rows: 20px;
-	grid-auto-rows: 100px;
-}
 
