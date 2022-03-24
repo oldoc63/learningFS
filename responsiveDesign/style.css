@@ -20,6 +20,10 @@ body {
 
 /* Banner Section */
 
+p {
+  min-width: 200px;
+}
+
 #banner {
   height: 46rem;
   background-image: url('camel-background.png');
