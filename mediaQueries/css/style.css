@@ -126,5 +126,7 @@ nav a {
 @media only screen and (min-width: 320px) and (max-width: 480px){
     .gallery-item .thumbnail {
       width: 95%;
-    }
-  }
+    } 
+}
+
+@media only screen and (min-resolution: 150dpi){}
