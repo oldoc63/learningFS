@@ -119,4 +119,8 @@ footer .container {
     }
 }
 
-@media only screen and (max-width: 470) {}
+@media only screen and (max-width: 470) {
+    .rating h1 {
+        font-size: 2rem;
+    }
+}
