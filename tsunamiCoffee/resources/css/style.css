@@ -118,3 +118,5 @@ footer .container {
         display: none;
     }
 }
+
+@media only screen and (max-width: 470) {}
