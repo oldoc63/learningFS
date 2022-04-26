@@ -1,5 +1,7 @@
-let first = document.body.children[0]
+newAttraction = document.createElement('li');
 
-first.innerHTML = 'BROWN BEARS ARE AWESOME!'
+newAttraction.id = 'vespa'
 
-first.parentNode.style.backgroundColor = 'beige'
+newAttraction.innerHTML = 'Rent a Vespa'
+
+document.getElementById('italy-attractions').appendChild(newAttraction);
