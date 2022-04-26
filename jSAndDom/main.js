@@ -1,3 +1,5 @@
-document.querySelector('body').style.backgroundColor = '#201F2E'
+let first = document.body.children[0]
 
-document.querySelector('.heading').style.fontFamily = 'Roboto'
+first.innerHTML = 'BROWN BEARS ARE AWESOME!'
+
+first.parentNode.style.backgroundColor = 'beige'
