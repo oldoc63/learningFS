@@ -1,7 +1,3 @@
-newAttraction = document.createElement('li');
+elementToRemove = document.getElementById('vespa')
 
-newAttraction.id = 'vespa'
-
-newAttraction.innerHTML = 'Rent a Vespa'
-
-document.getElementById('italy-attractions').appendChild(newAttraction);
+document.getElementById('italy-attractions').removeChild(elementToRemove);
