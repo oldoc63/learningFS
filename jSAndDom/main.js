@@ -1,3 +1,10 @@
-elementToRemove = document.getElementById('vespa')
+let element = document.querySelector('button');
 
-document.getElementById('italy-attractions').removeChild(elementToRemove);
+function turnButtonRed(){
+  // Add code to turn button red
+  element.style.backgroundColor = 'red';
+  element.style.color = 'white';
+  element.innerHTML = 'Red Button';
+}
+
+element.onclick = turnButtonRed;
