@@ -1,10 +1,9 @@
-let element = document.querySelector('button');
+let readMore = document.getElementById('read-more');
+let moreInfo = document.getElementById('more-info');
 
-function turnButtonRed(){
-  // Add code to turn button red
-  element.style.backgroundColor = 'red';
-  element.style.color = 'white';
-  element.innerHTML = 'Red Button';
+// Write your code here:
+function showInfo() {
+  moreInfo.style.display = 'block';
 }
 
-element.onclick = turnButtonRed;
+readMore.addEventListener('click', showInfo);

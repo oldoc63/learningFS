@@ -1,43 +1,40 @@
-p {
-  font-family: Arial;
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito';
 }
-
-h1 {
-  color: maroon;
+#container{
+  background: #141c3a;
+  margin: 0;
+  display: block;
+  float: left;
+  width: 100vw;
+  height: 100vh;
 }
-
-h2.destination {
-  font-family: cursive;
+#read-more{
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+  border: none;
+  display: block;
+  background-color: #6df0c2;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
-h5 {
-  color: rebeccapurple !important;
+#info, #more-info{
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+  height: 120px;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  background-color: #fd4d3f;
+  color: white;
+  margin-top: 20px;
 }
-
-h5,
-p {
-  font-family: Georgia;
-}
-
-.title {
-  color: teal;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-.publish-time {
-  color: gray;
-}
-
-.cursive {
-  font-family: cursive;
-}
-
-.capitalize {
-  text-transform: capitalize;
-}
-
-.description h5 {
-  color: teal;
+#more-info{
+  display: none;
 }
