@@ -1,43 +1,33 @@
 body{
-  margin: 0;
-  padding: 0;
-  font-family: 'Nunito';
+  background-color: #141c3a;
+  font-family: 'Nunito', sans-serif;
+  width: 70%;
+  margin: auto;
 }
-#container{
-  background: #141c3a;
-  margin: 0;
-  display: block;
-  float: left;
-  width: 100vw;
-  height: 100vh;
+
+h1{
+  color: white;
+  text-align: center;
+  margin-top: 64px;
 }
-#view-button{
-  width: 380px;
-  height: 50px;
+
+#fortune{
+  color: #EFBB24;
   font-size: 24px;
-  border: none;
-  display: block;
-  background-color: #6df0c2;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  cursor: pointer;
-  font-family: 'Nunito';
+  text-align: center;
 }
-#codey{
-  display: none;
-  width: 200px;
-  margin: 0 auto;
+
+#buttonContainer{
+  width: fit-content;
+  margin: auto;
 }
-#close-button{
-  width: 380px;
-  height: 50px;
-  font-size: 24px;
-  border: none;
-  display: none;
-  background-color: #fd4d3f;
-  margin: 0 auto;
-  margin-top: 20px;
+
+#fortuneButton{
+  padding: 10px;
+  font-size: 16px;
+  background: white;
+  border: 5px solid #D0104C;
+  border-radius: 5px;
+  color: #141c3a;
   cursor: pointer;
-  font-family: 'Nunito';
 }
