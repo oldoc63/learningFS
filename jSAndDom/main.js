@@ -1,33 +1,26 @@
-let view = document.getElementById('view-button');
-let close = document.getElementById('close-button');
-let codey = document.getElementById('codey');
+let fortunes = ["A beautiful, smart, and loving person will be coming into your life.",
+  "A fresh start will put you on your way.",
+  "A golden egg of opportunity falls into your lap this month.",
+  "A smile is your personal welcome mat.",
+  "All your hard work will soon pay off."
+]
 
-let open = function() {
-  codey.style.display = 'block';
-  close.style.display = 'block';
-};
+let button = document.getElementById('fortuneButton');
+let fortune = document.getElementById('fortune');
 
-let hide = function() {
-  codey.style.display = 'none';
-  close.style.display = 'none';
-};
-
-view.addEventListener('click', open);
-close.addEventListener('click', hide);
-
-// Write your code here
-let textChange = function(){
-  view.innerHTML = 'Hello World!'
+function fortuneSelector(){
+  let randomFortune = Math.floor(Math.random() * fortunes.length);
+  return fortunes[randomFortune];
 }
 
-view.addEventListener('click', textChange);
+function showFortune(){
+  fortune.innerHTML = fortuneSelector();
+  button.innerHTML = "Come back tomorrow!";
+  button.style.cursor = "default";
 
-let textReturn = function(){
-  view.innerHTML = 'View'
+  //add your code here
+  button.removeEventListener('click',showFortune);
+
 }
 
-view.addEventListener('click', textReturn);
-
-view.onclick = textChange;
-
-close.onclick = textReturn;
+button.addEventListener('click', showFortune);
