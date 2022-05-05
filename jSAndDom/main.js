@@ -1,11 +1,19 @@
-let social = document.getElementById('social-media');
-let share = document.getElementById('share-button');
-let text = document.getElementById('text');
+// This variable stores the "Pick a Color" button
+let button = document.getElementById('color-button');
 
-// Write your code below
-let sharePhoto = function(event) {
-  event.target.style.display = 'none';
-  text.innerHTML = 'You shared the puppy photo in ' + event.timestamp + ' ms. ';
+// This variable stores the "Mystery Color" button
+let mysteryButton = document.getElementById('next-button');
+
+// This random number function will create color codes for the randomColor variable
+function colorValue() {
+  return Math.floor(Math.random() * 256);
 }
 
-share.addEventListener('click', sharePhoto);
+function colorChange(event){
+  let randomColor = 'rgb(' + colorValue() + ',' + colorValue() + ',' + colorValue() + ')';
+  event.target.style.backgroundColor = randomColor;
+}
+
+button.addEventListener('click', colorChange);
+
+mysteryButton.addEventListener('wheel', colorChange);
