@@ -1,19 +1,38 @@
-// This variable stores the "Pick a Color" button
-let button = document.getElementById('color-button');
+// These variables store the boxes on the side
+let itemOne = document.getElementById('list-item-one');
+let itemTwo = document.getElementById('list-item-two');
+let itemThree = document.getElementById('list-item-three');
+let itemFour = document.getElementById('list-item-four');
+let itemFive = document.getElementById('list-item-five');
+let resetButton = document.getElementById('reset-button');
 
-// This variable stores the "Mystery Color" button
-let mysteryButton = document.getElementById('next-button');
+// This function programs the "Reset" button to return the boxes to their default styles
+let reset = function() {
+  itemOne.style.width = ''
+  itemTwo.style.backgroundColor = ''
+  itemThree.innerHTML = 'The mouse must leave the box to change the text'
+  itemFive.style.display = "none"
+};
+resetButton.onclick = reset;
 
-// This random number function will create color codes for the randomColor variable
-function colorValue() {
-  return Math.floor(Math.random() * 256);
+// Write your code here
+
+function increaseWidth(){
+  itemOne.style.width = '410px';
 }
+itemOne.addEventListener('mouseover', increaseWidth);
 
-function colorChange(event){
-  let randomColor = 'rgb(' + colorValue() + ',' + colorValue() + ',' + colorValue() + ')';
-  event.target.style.backgroundColor = randomColor;
+function changeBackground(){
+  itemTwo.style.backgroundColor = 'green';
 }
+itemTwo.addEventListener('mouseup', changeBackground);
 
-button.addEventListener('click', colorChange);
+function changeText(){
+  itemThree.innerHTML = 'The mouse has left the element';
+}
+itemThree.addEventListener('mouseout', changeText);
 
-mysteryButton.addEventListener('wheel', colorChange);
+function showItem(){
+  itemFive.style.display = 'block';
+}
+itemFour.addEventListener('mousedown', showItem);
