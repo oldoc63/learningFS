@@ -14,7 +14,9 @@ const keyReturn = function(event){
 }
 
 // Write a named function with event handler properties
-
+let eventAssigment = function(note){
+  
+}
 
 // Write a loop that runs the array elements through the function
 
