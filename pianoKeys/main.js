@@ -16,15 +16,15 @@ const keyReturn = function(event){
 // Write a named function with event handler properties
 let eventAssigment = function(note){
   note.onmousedown = function(){
-    keyPlay();
+    keyPlay(event);
   }
   note.onmouseup = function(){
-    keyReturn();
+    keyReturn(event);
   }
 }
 
 // Write a loop that runs the array elements through the function
-
+notes.forEach(eventAssigment);
 
 // These variables store the buttons that progress the user through the lyrics
 let nextOne = document.getElementById('first-next-line');
