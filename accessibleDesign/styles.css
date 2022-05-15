@@ -3,11 +3,11 @@
 body{
     background-color: #FFFFFF;
     margin: 0px;
-    padding: 40px 0px;
+    padding:40px 0px;
 }
-/**header styles**/
+/** header styles **/
 .header{
-    background-image: url(https://images.unsplash.com/photo-1426869884541-df7117556757?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrg);
+    background-image: url(https://images.unsplash.com/photo-1426869884541-df7117556757?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb);
     background-position: center bottom;
     height: 450px;
     margin: 0 auto;
@@ -15,36 +15,37 @@ body{
     text-align: center;
     width: 90%;
 }
-.overlay::before {
-    content: "";
+.overlay:before {
+    content: " ";
     z-index: -1;
     display: block;
-    position: absolute;
+    position: absolute;   
     height: 450px;
     top: 40;
     left: 5%;
     width: 90%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
 }
 .overlay * {
-    position: relative;
+    position: relative; /* Makes elements display above overlay. */
 }
 h1{
     color: white;
     font-family: 'Lobster', sans-serif;
     font-size: 80px;
-    margin: 0 px;
+    margin: 0px;
     padding-top: 12%;
     text-align: center;
     z-index: 0;
 }
 h2{
-    font-family: 'Alice', sans-serif;
+    font-family: 'Alice' , sans-serif;
     font-size: 26px;
     color: white;
+    font-weight: bold;
 }
 h3{
-    font-family: 'Alice', sans-serif;
+    font-family: 'Alice' , sans-serif;
     font-size: 22px;
     color: white;
 }
@@ -55,6 +56,7 @@ h4{
     font-weight: 300;
     margin: 0px;
     text-transform: uppercase;
+
 }
 h5{
     color: white;
@@ -63,6 +65,7 @@ h5{
     font-weight: 300;
     margin: 0px;
     text-transform: uppercase;
+
 }
 h6{
     color: white;
@@ -71,21 +74,22 @@ h6{
     font-weight: 300;
     margin: 0px;
     text-transform: uppercase;
+
 }
 p{
     color: #011C27;
     font-size: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins',sans-serif;
     font-weight: 500;
 }
-.tips p{
+.tips p {
     color: midnightblue;
     font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500; 
 }
-.tips h3{
-    font-family: 'Alice', sans-serif;
+.tips h3 {
+    font-family: 'Alice' , sans-serif;
     font-size: 22px;
     color: midnightblue;
 }
@@ -121,18 +125,20 @@ li{
     width: 50%;
 }
 .steps li{
-    color: #FFFFFF;
-    line-height: 18px !important;
+    color: #011C27;
+    font-size: 18px !important;
     margin-top: 20px;
+    list-style-type: circle;
+    margin-left: 20px;
 }
 .ingredients li{
-    color: #FFFFFF;
+    color: #ffffff;
     line-height: 18px;
     margin-top: 30px;
     text-align: left;
 }
 .nutrition{
-    background-color: lightgrey;
+    background-color: lightgray;
     padding: 30px;
     width: 50%;
 }
@@ -141,32 +147,36 @@ li{
     color: midnightblue;
 }
 .nutrition h2{
-    color: midnightblue;
+    color:midnightblue;
 }
 .nutrition h3{
-    color: midnightblue;
+    color:midnightblue;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 300;
     margin: 0px;
     text-transform: uppercase;
+
 }
 .nutrition p{
     font-size: 24px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins',sans-serif;
     font-weight: 700;
     margin: 0px;
     color: midnightblue;
 }
+
 body{
-    font-family: 'Open Sans'. sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
-.search{
+
+.search {
     width: 100%;
     position: relative;
     margin-top: 20px;
 }
-.searchTerm{
+
+.searchTerm {
     float: left;
     width: 100%;
     border: 3px solid midnightblue;
@@ -176,11 +186,13 @@ body{
     outline: none;
     color: lightskyblue;
 }
+
 .searchTerm:focus{
     color: midnightblue;
 }
-.searchButton{
-    position: absolute;
+
+.searchButton {
+    position: absolute;  
     right: -10px;
     top: 8px;
     width: auto;
@@ -188,16 +200,17 @@ body{
     border: 1px solid midnightblue;
     background: midnightblue;
     text-align: center;
-    color: #FFF;
+    color: #fff;
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
 }
+
 .wrap{
     width: 50%;
     padding: 10px;
     position: relative;
     top: 10;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
