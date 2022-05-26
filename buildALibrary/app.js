@@ -23,4 +23,7 @@ class Media {
         let ratingSum = this.ratings.reduce((accumulator, rating) => accumulator + rating);
         return ratingSum / this.ratings.length;
     }
+    addRating(value){
+        this.ratings.push(value);
+    }
 }
