@@ -29,5 +29,9 @@ class Media {
 }
 
 class Book extends Media {
-    
+    constructor(author, title, pages){
+        super(title);
+        this._author = author;
+        this._pages = pages;
+    }
 }
