@@ -13,5 +13,7 @@ class Media {
     get _ratings(){
         return this._ratings;
     }
-    
+    set isCheckedOut(value){
+        this._isCheckedOut = value;
+    }
 }
