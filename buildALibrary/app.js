@@ -27,3 +27,7 @@ class Media {
         this.ratings.push(value);
     }
 }
+
+class Book extends Media {
+    
+}
