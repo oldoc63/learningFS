@@ -23,5 +23,8 @@ class School {
     quickFacts(){
         console.log(`${this.name} educates ${this.numberOfStudents} students at the ${this.level} school level.`)
     }
-    
+    static pickSubstituteTeacher(substituteTeachers){
+        let myIndex = Math.floor(substituteTeachers.length * Math.random());
+        return substituteTeachers[myIndex];
+    }
 }
