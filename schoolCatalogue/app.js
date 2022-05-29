@@ -13,4 +13,7 @@ class School {
     get numberOfStudents(){
         return this._numberOfStudents;
     }
+    set numberOfStudents(value){
+        this._numberOfStudents = value;
+    }
 }
