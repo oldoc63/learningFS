@@ -14,6 +14,10 @@ class School {
         return this._numberOfStudents;
     }
     set numberOfStudents(value){
-        this._numberOfStudents = value;
+        if (typeof value === 'NaN'){
+            console.log('Invalid input: numberOfStudents must be a Number.');
+        }else{
+            this._numberOfStudents = value;
+        }
     }
 }
