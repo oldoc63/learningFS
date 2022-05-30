@@ -28,3 +28,7 @@ class School {
         return substituteTeachers[myIndex];
     }
 }
+
+class PrimarySchool extends School {
+    
+}
