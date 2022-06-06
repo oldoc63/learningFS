@@ -22,7 +22,7 @@ const getCompanies = () => {
 }
 
 const getDataByRole = role => {
-    return salaryData.filter(obj =>obj.role === role);
+    return salaryData.filter(obj => obj.role === role);
 }
 
 const getDataByCompany = company => {
