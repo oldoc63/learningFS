@@ -26,3 +26,8 @@ function balloonAttack (p1, p2){
         return 'Tie'
     }
 }
+
+const p1 = new Player('p1', 5);
+const p2 = new Player('p2', 5);
+ 
+console.log(balloonAttack(p1, p2));
