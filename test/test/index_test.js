@@ -3,7 +3,7 @@ const assert = require('assert');
 // Naive approach
 describe('.pop', () => {
   it('returns the last element in the array [naive]', () => {
-    assert.ok(pop(['padawan', 'knight']) === 'knight'); 
+    assert.ok(['padawan', 'knight'].pop() === 'knight'); 
   });
 });
 
@@ -15,7 +15,7 @@ describe('.pop', () => {
     const jediPath = ['padawan', knightString];
 
     // Exercise
-    const popped = pop(jediPath);
+    const popped = jediPath.pop();
 
     // Verify
     assert.ok(popped === knightString);
