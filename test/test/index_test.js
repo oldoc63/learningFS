@@ -1,23 +1,39 @@
 const assert = require('assert');
+const fs = require('fs');
+let path, str;
+ 
+describe('appendFileSync', () => {
+  it('creates a new file with a string of text', () => {
+ 
+   // Setup
+   path = './message.txt';
+   str = 'Hello Node.js';
+  
+   // Exercise: write to file
+   fs.appendFileSync(path, str);
+ 
+   // Verify: compare file contents to string
+   const contents = fs.readFileSync(path);
+   assert.equal(contents.toString(), str);
+ 
+   // Teardown: restore file
 
-// Naive approach
-describe('.pop', () => {
-  it('returns the last element in the array [naive]', () => {
-    assert.ok(['padawan', 'knight'].pop() === 'knight'); 
-  });
-});
+ });
+ 
+ it('creates a new file with a string of text', () => {
+ 
+   // Setup
+   path = './message.txt';
+   str = '';
+  
+   // Exercise: write to file
+   fs.appendFileSync(path, str);
+ 
+   // Verify: compare file contents to string
+   const contents = fs.readFileSync(path);
+   assert.equal(contents.toString(), str);
+ 
+   // Teardown: restore file
 
-// 3 phase approach
-describe('.pop', () => {
-  it('returns the last element in the array [3phase]', () => {
-    // Setup
-    const knightString = 'knight';
-    const jediPath = ['padawan', knightString];
-
-    // Exercise
-    const popped = jediPath.pop();
-
-    // Verify
-    assert.ok(popped === knightString);
-  });
+ });
 });
