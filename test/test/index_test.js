@@ -1,40 +1,20 @@
-const assert = require('assert');
-const fs = require('fs');
-let path, str;
- 
-describe('appendFileSync', () => {
-  it('creates a new file with a string of text', () => {
- 
-   // Setup
-   path = './message.txt';
-   str = 'Hello Node.js';
-  
-   // Exercise: write to file
-   fs.appendFileSync(path, str);
- 
-   // Verify: compare file contents to string
-   const contents = fs.readFileSync(path);
-   assert.equal(contents.toString(), str);
- 
-   // Teardown: restore file
-   fs.unlinkSync(path);
+describe('messing around with hooks', () => {
+  let testValue; // Variable used by both tests
 
- });
- 
- it('creates a new file with a string of text', () => {
- 
-   // Setup
-   path = './message.txt';
-   str = '';
-  
-   // Exercise: write to file
-   fs.appendFileSync(path, str);
- 
-   // Verify: compare file contents to string
-   const contents = fs.readFileSync(path);
-   assert.equal(contents.toString(), str);
- 
-   // Teardown: restore file
-   fs.unlinkSync(path);
- });
+  beforeEach(() => {
+    testValue = 5;
+  });
+
+  it('should add', () => {
+    // testValue = 5 <-- moved to beforeEach()
+    testValue = testValue + 5;
+    assert.equal(testValue, 10);
+  });
+
+  it('should multiply', () => {
+    // testValue = 5 < -- moved beforeEach()
+    testValue = testValue * 5;
+    asert.equal(testValue, 25);
+  });
+
 });
