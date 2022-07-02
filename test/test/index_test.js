@@ -1,20 +1,49 @@
-describe('messing around with hooks', () => {
-  let testValue; // Variable used by both tests
+const assert = require('assert');
+const fs = require('fs');
 
-  beforeEach(() => {
-    testValue = 5;
+let path, str;
+
+describe('appendFileSync', () => {
+  // Write hooks above the tests
+  before(() => {
+    path = './message.txt';
   });
 
-  it('should add', () => {
-    // testValue = 5 <-- moved to beforeEach()
-    testValue = testValue + 5;
-    assert.equal(testValue, 10);
+  afterEach(() => {
+    fs.unlinkSync(path);
   });
 
-  it('should multiply', () => {
-    // testValue = 5 < -- moved beforeEach()
-    testValue = testValue * 5;
-    asert.equal(testValue, 25);
+  
+  it('writes a string to text file at given path name', () => {
+
+    // Setup
+    str = 'Hello Node.js';
+
+    // Excercise: write to file
+    fs.appendFileSync(path, str);
+
+    // Verify: compare file contents to string
+    const contents = fs.readFileSync(path);
+    assert.equal(contents.toString(), str);
+
+    //Teardown: restore file
+
+  });
+
+  it('writes an empty string to text file at given path name', () => {
+
+    // Setup
+    str = '';
+
+    // Excercise: write to file
+    fs.appendFileSync(path, str);
+
+    // Verify: compare file contents to string
+    const contents = fs.readFileSync(path);
+    assert.equal(contents.toString(), str);
+
+    // Teardown: restore file
+
   });
 
 });
