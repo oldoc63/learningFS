@@ -34,6 +34,6 @@ describe('appendFileSync', () => {
    assert.equal(contents.toString(), str);
  
    // Teardown: restore file
-
+   fs.unlinkSync(path);
  });
 });
